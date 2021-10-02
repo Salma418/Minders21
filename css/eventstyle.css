@@ -1,0 +1,36 @@
+
+body
+{
+    
+   background-color: #000;
+    scroll-behavior: smooth;
+    
+}
+
+.rounded-circle
+{
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+   
+    
+    
+
+}
+h5{
+    color: #fff;
+    text-align: center;
+}
+h1{
+    color: #fff;
+    padding: 20px;
+}
+.container
+{
+    padding: 50px;
+   
+}
+
+
+
+

@@ -1,0 +1,78 @@
+*{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: black;
+}
+
+#vidContainer{
+  height: 100vh;
+  width: 100%;
+}
+
+#planetVideo{
+  width: 100%;
+  height: 100%;  
+  object-fit:fill;
+}
+
+
+#navContainer{
+  /*border: 4px solid green;*/
+  height: 100vh;
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.planetHoverText{
+  /* black text with yellow background&border
+  background-color: #FFD401;
+  color: black;
+  text-align: center;
+  border: 1px solid white;
+  width: 12rem;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 7px;
+  border-radius: 0px;
+  opacity: 0;
+  */  
+  color:  #FFD401;
+  text-align: center;
+  opacity: 0;
+  font-size: 1.8rem;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 7px;
+}
+
+#ufoImage{
+  position: absolute;
+  top: 100vh;
+  width: 500px;
+  height: 150px;
+}
+
+#lightImg{
+  /*-250
+    1000
+    1000*/
+  margin-top: -28vh;
+  height: 108vh;
+  width: 50vw;
+  opacity: 0;
+}
+
+#hiddenSlogan{
+  color: #FFD401; 
+  font-family: 'Bebas Neue', cursive;
+  opacity: 0;
+  letter-spacing: 6px;
+  z-index: 1;
+}

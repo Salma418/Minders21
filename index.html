@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--BOOTSTRAP-->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.min.css">
+  <!--/BOOTSTRAP-->
+  <link rel="stylesheet" href="css/style.css"> <!--Sec1 (nav+slogan)-->
+  <link rel="stylesheet" href="css/teaMA.css"> <!--Sec2 (memories> spinning planet + orbitting images)-->
+  <link href="css/eventstyle.css" rel="stylesheet">  <!--Sec3 (events)-->
+  <link rel="stylesheet" href="css/highboard.css"> <!-- Sec4 (highboard) -->
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <!-- BEBAS NUE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+
+
+  <meta charset="utf-8">
+  <title>S21</title>
+</head>
+
+<body>
+
+  <div class="container" id="vidContainer"> <!-- when .container is added, the video shrinks. however, due to the black background it still works -->
+    <video id="planetVideo" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="media/vid/planet.mp4" type="video/mp4">
+    </video>-
+  </div>
+
+  <div class="container-fluid" id="navContainer"> <!--Nav side icons in the 1st panel-->
+    <div class="row align-items-center">
+      <div class="col-lg-1 col-md-4 col-sm-2"><a href="#sloganSection"><img  class="img-fluid planetImgs"  onmouseover='planetHover("SLOGAN")' onmouseout='planetUnhover("SLOGAN")' src="media/img/astro.png" alt=""></a></div>
+      <div class="col-lg-1 col-md-4 col-sm-2 justify-self-center"><div class="planetHoverText">SLOGAN</div></div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-1 col-md-4 col-sm-2"><a href="#memoriesSection"><img  class="img-fluid planetImgs"  onmouseover='planetHover("MEMORIES")' onmouseout='planetUnhover("MEMORIES")' src="media/img/astro2.png" alt=""></a></div>
+      <div class="col-lg-1 col-md-4 col-sm-2"><div class="planetHoverText">MEMORIES</div></div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-1 col-md-4 col-sm-2"><a href="#eventsSection"><img  class="img-fluid planetImgs"  onmouseover='planetHover("EVENTS")' onmouseout='planetUnhover("EVENTS")' src="media/img/astro3.png" alt=""></a></div>
+      <div class="col-lg-1 col-md-4 col-sm-2"><div class="planetHoverText">EVENTS</div></div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-1 col-md-4 col-sm-2 "><a href="#highboardSection"><img  class="img-fluid planetImgs"  onmouseover='planetHover("HIGHBOARD")' onmouseout='planetUnhover("HIGHBOARD")' src="media/img/astro4.png" alt=""></a></div>
+      <div class="col-lg-1 col-md-4 col-sm-2 "><div class="planetHoverText">HIGHBOARD</div></div>
+    </div>
+  </div>
+
+  <div id="sloganSection" class="container-fluid justify-content-center"> <!-- UFO cotainer   -->
+    <div id="ufoContainer" class="row justify-content-end" style="height: 35vh;">
+      <img class="img-fluid max-width: 100%" id="ufoImage" src="media/img/ufo.png" alt="">
+
+    </div>
+    <div class="row justify-content-center" style="height: 40vh;"> <!-- Light beam container -->
+      <img id="lightImg" src="media/img/light.png" alt="">
+    </div>
+    <div class="row justify-content-center" style="height: 10vh;"> <!-- Slogan -->
+      <h1 id="hiddenSlogan">IMPROVE YOUR MOVE</h1>
+
+    </div>
+  </div>
+
+  <img class="object planet enm" src="media/img/p1.jpeg" alt="" id="mem">
+  <img class="object planet" src="media/img/p2.jpeg" alt="" id="mem">
+  <img class="object planet" src="media/img/p3.jpeg" alt="" id="mem">
+  <img class="object planet" src="media/img/p4.jpeg" alt="" id="mem">
+  <img class="object planet" src="media/img/p5.jpeg" alt="" id="mem">
+  <img class="object planet" src="media/img/p6.jpeg" alt="" id="mem">
+  <img class="object planet" src="media/img/p7.jpeg" alt="" id="mem">
+  <img class="object planet" src="media/img/p9.jpeg" alt="" id="mem">
+  <img class="object planet" src="media/img/p10.jpeg" alt="" id="mem">
+  <img class="object planet" src="media/img/p11.jpeg" alt="" id="mem">
+  <img class="object planet" src="media/img/p12.jpeg" alt="" id="mem">
+  <img class="object planet" src="media/img/p13.jpeg" alt="" id="mem">
+  
+
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object p-orbit"></div>
+  <div class="object" id="m-orbit"></div>
+
+  <!--<div style="display: flex; justify-content: center;">
+    <img src="media/img/venus.png" class="" alt="" id="belt">
+    <p class="par">Memories</p>
+  </div>-->
+
+
+  <div id="memoriesSection" class="container-fluid" style="height: 100vh;">
+    <div class="row justify-content-center"">
+      <div class="col-lg-3 col-md-6 col-sm-4"><img src="media/img/venus.png" class="img-fluid" alt="" id="belt"></div>
+    </div>
+    <div class="row justify-content-center"">
+      <div class="col-lg-1 col-md-4 col-sm-2 par" style="margin-top: -22vh; text-align: left; margin-left: -2vw;"><p >Memories</p></div>
+    </div>
+    
+  </div>
+
+
+  <div id="eventsSection" class="container">
+    <div class="row justify-content-center" >
+        <h1>MINDER'S EVENT</h1>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-sm-12 col-md-12">
+            <img src="media/img/recruitment21/recruitment.jpg" class="rounded-circle" alt="Cinque Terre">
+            <h5>13 november 2020 - Recuitment 21</h5>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="media/img/recruitment21/FB_IMG_1627604251363.jpg"
+                            alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="media/img/recruitment21/FB_IMG_1627930186832.jpg"
+                            alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="media/img/recruitment21/FB_IMG_1627935191840.jpg"
+                            alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 col-sm-12 col-md-12">
+            <img src="media/img/recruitment21/recruitment.jpg" class="rounded-circle" alt="Cinque Terre">
+            <h5>22 january 2021 - orientation 21</h5>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="media/img/orientation/53cba83f-1542-4a77-b42f-d3df6dc8ea24.jpg"
+                            alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="media/img/orientation/a329df9f-637d-4e3b-ad74-3a1354962485.jpg"
+                            alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="media/img/orientation/a760f6b1-7903-4292-9963-cbcd9f0eda11.jpg"
+                            alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="media/img/orientation/or1.jpg" alt="fourth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="media/img/orientation/or2.jpg" alt="fifth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="media/img/orientation/or3.jpg" alt="sixth slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="col-lg-4 col-sm-12 col-md-12 ">
+            <img src="media/img/mentorships21/55c498be-b920-4865-923d-b97fb1ef2fcf.jpg" class="rounded-circle"
+                alt="Cinque Terre">
+            <h5>1 february 2021 - mentorships 21</h5>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="media/img/recruitment21/FB_IMG_1627604251363.jpg"
+                            alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="media/img/recruitment21/FB_IMG_1627930186832.jpg"
+                            alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="media/img/recruitment21/FB_IMG_1627935191840.jpg"
+                            alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-sm-12 col-md-12">
+            <img src="media/img/major21/939e3b39-c17e-4be4-946e-699cb160ec01.jpg" class="rounded-circle"
+                alt="Cinque Terre">
+            <h5>27 july 2021 - majors day 21</h5>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="media/img/recruitment21/FB_IMG_1627604251363.jpg"
+                            alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="media/img/recruitment21/FB_IMG_1627930186832.jpg"
+                            alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="media/img/recruitment21/FB_IMG_1627935191840.jpg"
+                            alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 col-sm-12 col-md-12">
+            <img src="media/img/fsat/bb8776f2-9a82-4999-96ca-735fcf7ed564.jpg" class="rounded-circle" alt="Cinque Terre">
+            <h5>20 august 2021 - FSAT 21</h5>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="media/img/fsat/0ed859de-7ba3-4781-bbb0-122bf4d8d95a.jpg"
+                            alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="media/img/fsat/2d9fe8a9-215e-4f5e-ae2c-228e548c62b4.jpg"
+                            alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="media/img/fsat/2e0ecd11-2007-48a6-8d23-e5bf85b6fe13.jpg"
+                            alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="media/img/fsat/5add902a-4ff0-4a86-98f3-53f93a886955.jpg"
+                            alt="fourth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="media/img/fsat/3621ca63-9b78-4136-bfbe-b0f2483f5bc4.jpg"
+                            alt="fifth slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="media/img/fsat/cff3e28b-79fd-4cbe-be0a-637940e60a87.jpg"
+                            alt="sixth slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="col-lg-4 col-sm-12 col-md-12">
+            <img src="media/img/workshops21/45379eb6-7bf3-49c5-8f9f-8587d72a0cb0.jpg" class="rounded-circle"
+                alt="Cinque Terre">
+            <h5>10 september 2021 - workshops 21</h5>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="media/img/recruitment21/FB_IMG_1627604251363.jpg"
+                            alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="media/img/recruitment21/FB_IMG_1627930186832.jpg"
+                            alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="media/img/recruitment21/FB_IMG_1627935191840.jpg"
+                            alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="highboardSection" class="container-fluid">
+  <div>
+      <p class="PW">High Board Photos & Words</p>
+      <img src="media/img/1.png"  >
+  </div>
+
+  <div>
+      <img src="media/img/HB Photo.png" width="100%">
+  </div>
+
+
+  <div class="row justify-content-center">
+      <div class="col-md-3 HB" onmouseenter="show(0)" onmouseleave="hide(0)">
+          <div class="overlay">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+          </div>
+      </div>
+      <div class="col-md-3 HB offset-1 "  onmouseenter="show(1)" onmouseleave="hide(1)">
+          <div class="overlay">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="row PM justify-content-around ">
+      <div class="col-md-2 HB  " onmouseenter="show(2)" onmouseleave="hide(2)"  >
+          <div onclick="sectionController(1)" class="overlay" >
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+          </div>
+      </div>
+      <div class="col-md-2 HB" onmouseenter="show(3)" onmouseleave="hide(3)" >
+          <div class="overlay" onclick="sectionController(3)">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+          </div>
+      </div>
+      <div class="col-md-2 HB " onmouseenter="show(4)" onmouseleave="hide(4)" >
+          <div class="overlay" onclick="sectionController(0)">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+          </div>
+      </div>
+      <div class="col-md-2 HB" onmouseenter="show(5)" onmouseleave="hide(5)" >
+          <div class="overlay"  onclick="sectionController(2)">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="row Marwan">
+      <div class="row FR justify-content-around">
+          <div class="col-md-3 HB " onmouseenter="show(6)" onmouseleave="hide(6)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-3 HB " onmouseenter="show(7)" onmouseleave="hide(7)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-3 HB " onmouseenter="show(8)" onmouseleave="hide(8)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="row PR justify-content-around">
+          <div class="col-md-3 HB " onmouseenter="show(9)" onmouseleave="hide(9)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-3 HB " onmouseenter="show(10)" onmouseleave="hide(10)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-3 HB " onmouseenter="show(11)" onmouseleave="hide(11)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="row OC justify-content-center">
+          <div class="col-md-3 HB " onmouseenter="show(12)" onmouseleave="hide(12)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-3 HB " onmouseenter="show(13)" onmouseleave="hide(13)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="row Tarek" >
+      <div class="row QM justify-content-around">
+          <div class="col-md-3 HB " onmouseenter="show(14)" onmouseleave="hide(14)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-3 HB " onmouseenter="show(15)" onmouseleave="hide(15)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-3 HB " onmouseenter="show(16)" onmouseleave="hide(16)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="row HR justify-content-around">
+          <div class="col-md-3 HB " onmouseenter="show(17)" onmouseleave="hide(17)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-3 HB " onmouseenter="show(18)" onmouseleave="hide(18)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-3 HB " onmouseenter="show(19)" onmouseleave="hide(19)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="row Ahmed" >
+      <div class="row IT justify-content-around">
+          <div class="col-md-3 HB " onmouseenter="show(20)" onmouseleave="hide(20)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-3 HB " onmouseenter="show(21)" onmouseleave="hide(21)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-3 HB " onmouseenter="show(22)" onmouseleave="hide(22)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="row AC justify-content-around">
+          <div class="col-md-2 HB " onmouseenter="show(23)" onmouseleave="hide(23)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-2 HB " onmouseenter="show(24)" onmouseleave="hide(24)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-2 HB " onmouseenter="show(25)" onmouseleave="hide(25)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-2 HB " onmouseenter="show(26)" onmouseleave="hide(26)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="row Donia" >
+      <div class="row PV justify-content-around">
+          <div class="col-md-3 HB " onmouseenter="show(27)" onmouseleave="hide(27)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-3 HB " onmouseenter="show(28)" onmouseleave="hide(28)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-3 HB " onmouseenter="show(29)" onmouseleave="hide(29)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="row GD justify-content-around">
+          <div class="col-md-3 HB " onmouseenter="show(30)" onmouseleave="hide(30)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-3 HB " onmouseenter="show(31)" onmouseleave="hide(31)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="row SM justify-content-around">
+          <div class="col-md-3 HB " onmouseenter="show(32)" onmouseleave="hide(32)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-3 HB " onmouseenter="show(33)" onmouseleave="hide(33)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="row CW justify-content-around">
+          <div class="col-md-3 HB " onmouseenter="show(34)" onmouseleave="hide(34)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+          <div class="col-md-3 HB " onmouseenter="show(35)" onmouseleave="hide(35)">
+              <div class="overlay">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestiae. At, iure. Nostrum, iure pariatur aliquid earum, accusamus in laudantium vitae odio assumenda tempora vel, ex nobis dolorum neque adipisci.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+</body>
+
+<footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!--BOOTSTRAP-->
+  <script src="bootstrap/js/bootstrap.bundle.js" charset="utf-8"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js" charset="utf-8"></script>
+  <script src="bootstrap/js/bootstrap.js" charset="utf-8"></script>
+  <script src="bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
+  <!--/BOOTSTRAP-->
+  <script src="js/app.js" charset="utf-8"></script> 
+  <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</footer>
+
+</html>

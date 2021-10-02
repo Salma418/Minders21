@@ -1,0 +1,186 @@
+
+body{
+    background-color: black;
+    scroll-behavior: smooth;
+}
+.HB {
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0;
+    overflow: hidden;
+    height: 380px;
+}
+.PW
+{
+    /*position: absolute;
+    top: 52px;
+    left: 220px;
+    font-size: xx-large;
+    color: white;**/
+    position: relative;
+    top: 12vh;
+    left: 11.5vw;
+    font-size: xx-large;
+    color: white;
+}
+
+.HB:nth-child(1) {
+    background-image: url("../media/img/Minderss-02.png");
+}
+.HB:nth-child(2) {
+    background-image: url("../media/img/Minderss-03.png");
+}
+.PM .HB:nth-child(1) {
+    background-image: url("../media/img/m1-02.png");
+}
+.PM .HB:nth-child(2) {
+    background-image: url("../media/img/m1-03.png");
+}
+.PM .HB:nth-child(3) {
+    background-image: url("../media/img/m1-04.png");
+}
+.PM .HB:nth-child(4) {
+    background-image: url("../media/img/m1-05.png");
+}
+.Marwan .FR .HB:nth-child(1)
+{
+    background-image: url("../media/img/Minderss-18.png");
+}
+.Marwan .FR .HB:nth-child(2)
+{
+    background-image: url("../media/img/m1-01.png");
+}
+.Marwan .FR .HB:nth-child(3)
+{
+    background-image: url("../media/img/m1-07.png");
+}
+.Marwan .PR .HB:nth-child(1)
+{
+    background-image: url("../media/img/m1-08.png");
+}
+.Marwan .PR .HB:nth-child(2)
+{
+    background-image: url("../media/img/m1-09.png");
+}
+.Marwan .PR .HB:nth-child(3)
+{
+    background-image: url("../media/img/m1-10.png");
+}
+.Marwan .OC .HB:nth-child(1)
+{
+    background-image: url("../media/img/Minderss-06.png");
+}
+.Marwan .OC .HB:nth-child(2)
+{
+    background-image: url("../media/img/m1-18.png");
+}
+.Tarek .QM .HB:nth-child(1)
+{
+    background-image: url("../media/img/m1-17.png");
+}
+.Tarek .QM .HB:nth-child(2)
+{
+    background-image: url("../media/img/m1-16.png");
+}
+.Tarek .QM .HB:nth-child(3)
+{
+    background-image: url("../media/img/m1-14.png");
+}
+.Tarek .HR .HB:nth-child(1)
+{
+    background-image: url("../media/img/Minderss-08.png");
+}
+.Tarek .HR .HB:nth-child(2)
+{
+    background-image: url("../media/img/Minderss-09.png");
+}
+.Tarek .HR .HB:nth-child(3)
+{
+    background-image: url("../media/img/Minderss-10.png");
+}
+
+.Ahmed .IT .HB:nth-child(1)
+{
+    background-image: url("../media/img/Minderss-12.png");
+}
+.Ahmed .IT .HB:nth-child(2)
+{
+    background-image: url("../media/img/Minderss-11.png");
+}
+.Ahmed .IT .HB:nth-child(3)
+{
+    background-image: url("../media/img/Minderss-07.png");
+}
+.Ahmed .AC .HB:nth-child(1)
+{
+    background-image: url("../media/img/Minderss-05.png");
+}
+.Ahmed .AC .HB:nth-child(2)
+{
+    background-image: url("../media/img/Minderss-14.png");
+}
+.Ahmed .AC .HB:nth-child(3)
+{
+    background-image: url("../media/img/Minderss-13.png");
+}
+.Ahmed .AC .HB:nth-child(4)
+{
+    background-image: url("../media/img/m1-13.png");
+}
+.Donia .PV .HB:nth-child(1)
+{
+    background-image: url("../media/img/Minderss-16.png");
+}
+.Donia .PV .HB:nth-child(2)
+{
+    background-image: url("../media/img/Minderss-15.png");
+}
+.Donia .PV .HB:nth-child(3)
+{
+    background-image: url("../media/img/Minderss-01.png");
+}
+.Donia .GD .HB:nth-child(1)
+{
+    background-image: url("../media/img/m1-19.png");
+}
+.Donia .GD .HB:nth-child(2)
+{
+    background-image: url("../media/img/m1-20.png");
+}
+.Donia .SM .HB:nth-child(1)
+{
+    background-image: url("../media/img/Minderss-17.png");
+}
+.Donia .SM .HB:nth-child(2)
+{
+    background-image: url("../media/img/Minderss-04.png");
+}
+.Donia .CW .HB:nth-child(1)
+{
+    background-image: url("../media/img/m1-12.png");
+}
+.Donia .CW .HB:nth-child(2)
+{
+    background-image: url("../media/img/m1-11.png");
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: #fff;
+
+    position: relative;
+    top: 100%;
+    transition: 1s;
+}
+.PM .HB {
+    height: auto;
+}
+.Ahmed .AC .HB
+{
+    height: auto;
+}
+.Marwan, .Tarek, .Ahmed, .Donia{
+    display: none;
+}
